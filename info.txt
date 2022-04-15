@@ -1,0 +1,56 @@
+src/index.js
+
+Markdown
+
+
+Componentes de React :
+
+1 - Son funciones
+
+    function Componentes(){}
+    const Componenete = () => {}
+    class Componentes {}
+
+2 - Siempre van en mayusculas
+
+    const Componenete = () => {}
+
+3 - Siempre tienen retorno
+
+    const Componenete = () => {
+        return "Hola Mundo"
+    }
+
+DESTRUCTURING :
+
+const arr[1,2,3]
+
+    const [uno,dos,tres] = arr
+
+    const uno = arr[0]
+    const dos = arr[1]
+    const tres = arr[2]
+
+
+const obj = {x:1,y:2,z:3}
+
+    const {x:nuevaVariable,y:y,z:z} = obj
+
+    const {x:x,y:y,z:z} = obj
+    const {x,y,z} = obj
+
+
+    const x = obj.x
+    const y = obj.y
+    const z = obj.z
+
+OBJECT PROPERTY SHORTHAND
+
+
+const pnombre = "nicolas"
+
+const persona = {
+    nombre : nombre
+}
+
+const persona = {nombre}

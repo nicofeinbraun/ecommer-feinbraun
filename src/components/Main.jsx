@@ -4,7 +4,7 @@ import ItemListContainer from "./ItemListContainer"
 const Main =() =>{
     return(
         <Container as="main">
-            <ItemListContainer/>
+            <ItemListContainer greeting="Lista productos"/>
         </Container>
     )
 }

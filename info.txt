@@ -54,3 +54,8 @@ const persona = {
 }
 
 const persona = {nombre}
+
+HOOK :funciones que extienden la funcionalidad del mismo componente
+
+1 - Se ejecutanadentro de un componente
+2 - No pueden estar en ningun flujo

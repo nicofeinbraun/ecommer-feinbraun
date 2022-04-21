@@ -1,8 +1,7 @@
-//import ItemList from "./ItemList"
 
-const ItemListContainer = () => {
+const ItemListContainer = ({greeting}) => {
     return(
-        <p>Catalogo de productos</p>
+        <p>{greeting}</p>
     )
 }
 export default ItemListContainer

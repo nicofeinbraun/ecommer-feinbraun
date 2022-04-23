@@ -5,7 +5,7 @@ import Contador from "./Contador"
 const Main =() =>{
 
     const onAdd = () =>{
-
+        console.log("confirmar")
     }
     return(
         <Container as="main">

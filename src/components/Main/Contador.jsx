@@ -19,8 +19,8 @@ const Contador = ({init,stock}) => {
     }
 
     const confirmar = () =>{
-        //onAdd()
-        setConfirmado(true)
+        onAdd()
+        //setConfirmado(true)
     }
 
     if (!confirmado){

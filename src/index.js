@@ -4,7 +4,7 @@ import React from "react"
 //2) Tener la variable reactDOM en scope
 import ReactDOM from "react-dom/client"
 
-import App from "./components/App"
+import App from "./App"
 import "./estilos.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 

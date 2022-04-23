@@ -1,5 +1,5 @@
 //id lo toma igual. class se pone classNAme
-import NavBar from "./NavBar"
+import NavBar from "../NavBar/NavBar"
 import CartWidget from "./CartWidget"
 
 const Header = () =>{

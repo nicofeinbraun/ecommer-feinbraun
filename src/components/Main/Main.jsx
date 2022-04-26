@@ -1,6 +1,5 @@
 import {Container} from "react-bootstrap"
-import ItemListContainer from "./ItemListContainer"
-import Contador from "./Contador"
+import ItemListContainer from "./Items/ItemListContainer"
 
 const Main =() =>{
 
@@ -10,7 +9,6 @@ const Main =() =>{
     return(
         <Container as="main">
             <ItemListContainer greeting="Lista productos"/>
-            <Contador init = {0} stock ={10} onAdd={onAdd}/>
         </Container>
     )
 }

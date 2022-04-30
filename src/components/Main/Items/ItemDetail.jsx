@@ -1,21 +1,21 @@
-import {useState , useEffect} from "react"
+import React from 'react'
 import Contador from "./Contador"
+//import Contador from "./Contador"
 
-
-
-const Items = ({productos}) =>{
+const ItemDetail = ({productos}) => {
     return (
         <article className="card">
             <h3>{productos.nombre}</h3>
-
-            <img src={process.env.PUBLIC_URL + productos.img} className="imagen"></img>      
+            <img src={productos.img}></img>        
             <p>Precio : ${productos.precio}</p>
             <p>Categorias : {productos.categorias.map(categoria=>{
                 return <span>{categoria}</span>
             })}</p>
+            <p>Detalle : {productos.descripcion}</p>
             <button>Detalles</button>
             <Contador init = {0} stock ={10}/>
         </article>
-    )
+        )
 }
-export default Items
+
+export default ItemDetail

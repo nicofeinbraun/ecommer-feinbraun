@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nombre":"Conjunto Deportivo",
+        "precio": 7199,
+        "categorias" : ["deporte","hombres"],
+        "descripcion": "Lorem ipsum dolor sit amet.",
+        "img":"./fotos/conjuntodeportivo.jpg"
+    },
+    {
+        "id": 2,
+        "nombre":"Saco",
+        "precio": 6000,
+        "categorias" : ["formal","hombres"],
+        "descripcion": "Lorem ipsum dolor sit amet.",
+        "img":"./fotos/Saco.jpg"
+    },
+    {
+        "id": 3 ,
+        "nombre":"Remera Hombre",
+        "precio": 800,
+        "categorias" : ["deporte","hombres"],
+        "descripcion": "Lorem ipsum dolor sit amet.",
+        "img":"./fotos/Remera.jpg"
+    }
+]

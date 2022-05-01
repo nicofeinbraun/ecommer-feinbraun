@@ -9,6 +9,7 @@
 html , body , #root {
     height: 100vh;
 }
+
   
 a {
     color: black;
@@ -36,12 +37,7 @@ li{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
-    nav {
-        a {
-            margin-left: 1rem;
-        }
-    }
+    text-decoration: none;
 }
 
 main{

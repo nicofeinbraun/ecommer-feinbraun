@@ -1,33 +1,5 @@
-/*const NavBar = (props) => {
-
-  //console.table(props.link)
-  //console.log(props.footer)
-
-  //console.log(props.id)
-  if (props.footer){
-    return (    
-      <nav className="nav">
-                      <a href="#">{props.nombre}</a>
-                      <a href="#" className="nav_link">Home  </a>
-                      <a href="#" className="nav_link">Prdocutos  </a>
-                      <a href="#" className="nav_link">Contacto  </a>
-                  </nav>
-    )
-  }else{
-    return (    
-      <nav className="nav">
-                      <a href="#" className="nav_link">Home  </a>
-                      <a href="#" className="nav_link">Prdocutos  </a>
-                      <a href="#" className="nav_link">Contacto  </a>
-                  </nav>
-    )
-  }
-}*/
-
-import {Navbar} from "react-bootstrap"
-import {Container} from "react-bootstrap"
-import {Nav} from "react-bootstrap"
-import {NavDropdown} from "react-bootstrap"
+import {Navbar,Container,NavDropdown,Nav} from "react-bootstrap"
+import {Link , NavLink} from 'react-router-dom'
 
 
 const NavBar = (props) => {
@@ -36,13 +8,13 @@ const NavBar = (props) => {
       <Navbar bg="light" variant="light">
         <Container fluid>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link as={Link} to="/home">Home</Nav.Link>
             <NavDropdown title="Productos" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Remeras</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Zapatillas</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Pantalones</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/productos/remeras">Remeras</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/productos/pantalones">Pantalones</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/productos/otros">Otros</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#pricing">{props.contacto}</Nav.Link>
+            <Nav.Link as={Link} to="/contacto">{props.contacto}</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -52,8 +24,8 @@ const NavBar = (props) => {
       <Navbar bg="light" variant="light">
         <Container fluid>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Productos</Nav.Link>
+            <Nav.Link as={Link} to="/home">Home</Nav.Link>
+            <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
             <Nav.Link href="#pricing">{props.instagram}</Nav.Link>
             <Nav.Link href="#pricing">{props.facebook}</Nav.Link>
           </Nav>

@@ -1,12 +1,10 @@
-import {useState , useEffect} from "react"
+import {useState , } from "react"
 import Contador from "./Contador"
 import { Link, useNavigate } from "react-router-dom"
 
 
 
 const Items = ({productos}) =>{
-    console.log(productos)
-
     const navigate = useNavigate()
 
     const handleClick = () => {
@@ -17,7 +15,7 @@ const Items = ({productos}) =>{
         <article className="card">
             <h3>{productos.nombre}</h3>
 
-            <img src={process.env.PUBLIC_URL + productos.img} className="imagen"></img>      
+            <img src={process.env.PUBLIC_URL + productos.img} className="imagen" alt =""></img>      
             <p>Precio : ${productos.precio}</p>
             {/*<p>Categorias : {productos.categorias.map(categoria=>{
                 return <span>{categoria}</span>

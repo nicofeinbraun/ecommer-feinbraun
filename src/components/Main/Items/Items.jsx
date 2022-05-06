@@ -22,8 +22,10 @@ const Items = ({productos}) =>{
             })}</p>*/}
             {/*<Link to={`/producto/${productos.nombre}`}>Detalles</Link>*/}
             <button onClick={handleClick}>Detalles</button>
-            <Contador init = {0} stock ={10}/>
+            
         </article>
     )
 }
 export default Items
+
+//<Contador init = {0} stock ={10}/>

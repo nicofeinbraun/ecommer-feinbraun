@@ -11,6 +11,13 @@ const ItemDetailContainer = () => {
     const articulo = useParams()
 
     useEffect(() => {
+        /*
+        const resultado = productosDeBaseDeDatos.filter((productos)=>{
+            return producto.id == id
+        })
+        setProducto(resultado)
+        setCargando(false)
+        */
         const promesa = new Promise((res,rej)=>{
             setTimeout(()=>{
                 res(productosDeBaseDeDatos)
@@ -19,9 +26,14 @@ const ItemDetailContainer = () => {
         .then((promesa)=>{
             console.log("Salio todo Bien")
             console.log("Recibo Productos!")
-            setProductos(productosDeBaseDeDatos.filter(productosDeBaseDeDatos => productosDeBaseDeDatos.codigo == articulo.id))
-                        
+            const resultado = productosDeBaseDeDatos.filter((producto)=>{
+                return producto.codigo == articulo.id
+            })
+            setProductos(resultado)
             setCargando(false)
+            /*setProductos(productosDeBaseDeDatos.filter(productosDeBaseDeDatos => productosDeBaseDeDatos.codigo == articulo.id))
+                        
+            setCargando(false)*/
         })
         .catch(()=>{
             console.log("Salio todo Mal")
@@ -41,4 +53,3 @@ if(cargando){
 }
 
 export default ItemDetailContainer
-//<ItemDetail id={productos.id} nombre={productos.nombre} img={productos.img} precio={productos.precio} detalle={productos.descripcion}/>

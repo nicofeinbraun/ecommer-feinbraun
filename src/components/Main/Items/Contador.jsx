@@ -1,10 +1,10 @@
 import {useState , useEffect, onAdd} from "react"
+import {Link} from 'react-router-dom'
 
 const Contador = ({init,stock, onClick}) => {
 
     const [contador,setContador] = useState(init)
     const [confirmado,setConfirmado] = useState(false)
-    //const {agregarProducto} = useContext(contexto)
 
     const sumar = () => {
         if (contador < stock){
@@ -21,7 +21,6 @@ const Contador = ({init,stock, onClick}) => {
 
     const handleClick = (conta) =>{
         setConfirmado(true)
-        console.log(conta)
         onClick(conta)
     }
 
@@ -37,7 +36,9 @@ const Contador = ({init,stock, onClick}) => {
     }else{
         return(
             <div>
-                <button>Cancelar</button>
+                <Link to="/cart">
+                    <button>Terminar Compra</button>
+                </Link>
             </div>
         )
     }

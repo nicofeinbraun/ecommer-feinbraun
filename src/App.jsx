@@ -2,17 +2,16 @@ import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import Main from "./components/Main/Main"
 import { BrowserRouter } from "react-router-dom"
-import MiCustomProvider from "./miContexto"
+import {CustomProvider} from "./miContexto"
 
 const App = () => {
     return (
         <BrowserRouter>
-            <MiCustomProvider>
+            <CustomProvider>
                 <Header/>
-                <Main>
-                </Main>
-                <Footer/>
-            </MiCustomProvider>
+                <Main/>
+            </CustomProvider>
+            <Footer/>
         </BrowserRouter>
     )
 }

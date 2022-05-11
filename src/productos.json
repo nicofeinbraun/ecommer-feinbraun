@@ -3,7 +3,6 @@
         "codigo": 1,
         "nombre":"Conjunto Deportivo",
         "precio": 7199,
-        "cantidad":0,
         "categorias" : "otros",
         "descripcion": "Lorem ipsum dolor sit amet.",
         "img":"./fotos/conjuntodeportivo.jpg"
@@ -12,7 +11,6 @@
         "codigo": 2,
         "nombre":"Saco",
         "precio": 6000,
-        "cantidad":0,
         "categorias" : "otros",
         "descripcion": "Lorem ipsum dolor sit amet.",
         "img":"./fotos/Saco.jpg"
@@ -21,7 +19,6 @@
         "codigo": 3 ,
         "nombre":"Remera Hombre",
         "precio": 800,
-        "cantidad":0,
         "categorias" : "remeras",
         "descripcion": "Lorem ipsum dolor sit amet.",
         "img":"./fotos/Remera.jpg"
@@ -30,7 +27,6 @@
         "codigo": 4 ,
         "nombre":"Jean",
         "precio": 2000,
-        "cantidad":0,
         "categorias":"pantalones",
         "descripcion": "Lorem ipsum dolor sit amet.",
         "img":"./fotos/jean-hombre.jpg"
@@ -39,7 +35,6 @@
         "codigo": 6,
         "nombre":"Remera Deportiva",
         "precio": 1300,
-        "cantidad":0,
         "categorias":"remeras",
         "descripcion": "Lorem ipsum dolor sit amet.",
         "img":"./fotos/remeradeporte.jpg"
@@ -48,7 +43,6 @@
         "codigo": 7,
         "nombre":"Jean Mujer",
         "precio": 1800,
-        "cantidad":0,
         "categorias":"pantalones",
         "descripcion": "Lorem ipsum dolor sit amet.",
         "img":"./fotos/jean.jpg"

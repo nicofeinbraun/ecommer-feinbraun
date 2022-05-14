@@ -10,34 +10,29 @@ export const CustomProvider =({ defaultValue = [], children,producto }) =>{
     const [carrito,setCarrito] = useState(defaultValue)
 
     const [precio_total,setPrecio_total] = useState(0)
-    /*const valorDelContexto = {
-        cantidad_total : 0,
-        precio_total : 0,
-        carrito : []
-    }*/
 
     const addItem =( producto, cantidad,precio) => {
-        if (isInCart(producto.codigo)){
-            const newCarrito = [...carrito]
-            for (const element of newCarrito){
-                if(element.producto.codigo == producto.codigo){
-                    producto.cantidad = it.cantidad + cantidad
-                }
-            }
-            setCarrito(newCarrito)
-        }else{
+        if (isInCart(producto.id)==undefined){
             setCarrito([...carrito,{
-                codigo:producto.codigo,
+                codigo:producto.id,
                 producto:producto.nombre,
                 cantidad:cantidad,
                 precio:precio
             }])
             setPrecio_total (precio_total + precio)
+        }else{
+            const newCarrito = [...carrito]
+            for (const element of newCarrito){
+                if(element.producto.id === producto.id){
+                    element.cantidad = element.cantidad + cantidad
+                }
+            }
+            setCarrito(newCarrito)
         }
     }
 
     const isInCart = (codigo) => {
-        return carrito.find(e => e.codigo === codigo)
+        return carrito.find(e => e.producto.codigo === codigo)
     }
 
     const removeItem = (codigo) => {

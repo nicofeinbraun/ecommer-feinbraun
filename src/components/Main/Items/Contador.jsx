@@ -24,7 +24,7 @@ const Contador = ({init,stock, onClick}) => {
         onClick(conta)
     }
 
-    if (!confirmado){
+    //if (!confirmado){
         return(
             <div>
                 <p>Unidades a comprar : {contador}</p>
@@ -33,7 +33,7 @@ const Contador = ({init,stock, onClick}) => {
                 <button onClick={sumar} className="material-icons">add</button>
             </div>
         )
-    }else{
+   /* }else{
         return(
             <div>
                 <Link to="/cart">
@@ -41,7 +41,7 @@ const Contador = ({init,stock, onClick}) => {
                 </Link>
             </div>
         )
-    }
+    }*/
 }
 
 export default Contador

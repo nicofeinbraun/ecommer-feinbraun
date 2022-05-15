@@ -1,13 +1,16 @@
 import React, { useContext, useState } from 'react'
+import {Link , NavLink} from 'react-router-dom'
 import {cartContext} from "../../miContexto"
-const CartWidget = () => {
 
-    //const resultado = useContext(cartContext)
-    
+const CartWidget = () => {
+    const {cantidad_total} = useContext(cartContext)  
     return(
-        <span className="material-icons">
-        shopping_cart
-        </span>
+        <Link to="/cart">
+            <span className="material-icons">
+            shopping_cart 
+            </span>
+            {cantidad_total}
+        </Link>
     )
 }
 

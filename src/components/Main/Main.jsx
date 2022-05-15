@@ -3,7 +3,7 @@ import { Routes , Route } from "react-router-dom"
 import ItemDetailContainer from "./Items/ItemDetailContainer"
 import ItemListContainer from "./Items/ItemListContainer"
 import { BrowserRouter } from "react-router-dom"
-import Carrito from "./Carrito"
+import Carrito from "./Carrito/Carrito"
 
 const Main =() =>{
     return(

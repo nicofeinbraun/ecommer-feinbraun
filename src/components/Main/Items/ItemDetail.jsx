@@ -6,12 +6,10 @@ import {cartContext} from "../../../miContexto"
 const ItemDetail = ({productos}) => {
 
     const [cantidad,setCantidad] =useState(0)
-    //const[precio,setPrecio] = useState(0)
     const {addItem} = useContext(cartContext)
 
     const handleClick = (e) =>{
         setCantidad (e)  
-        //setPrecio (productos.precio*e)
         addItem(productos,e,(productos.precio*e))  
     }
 

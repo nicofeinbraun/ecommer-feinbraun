@@ -8,14 +8,14 @@ const Items = ({productos}) =>{
     const navigate = useNavigate()
 
     const handleClick = () => {
-        navigate(`/producto/${productos.codigo}`)
+        navigate(`/producto/${productos.id}`)
     }
 
     return (
         <article className="card">
             <h3>{productos.nombre}</h3>
 
-            <img src={process.env.PUBLIC_URL + productos.img} className="imagen" alt =""></img>      
+            <img src={productos.img} className="imagen" alt =""></img>      
             <p>Precio : ${productos.precio}</p>
             {/*<p>Categorias : {productos.categorias.map(categoria=>{
                 return <span>{categoria}</span>

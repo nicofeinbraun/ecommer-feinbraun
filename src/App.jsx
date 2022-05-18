@@ -4,6 +4,9 @@ import Main from "./components/Main/Main"
 import { BrowserRouter } from "react-router-dom"
 import {CustomProvider} from "./miContexto"
 
+
+
+
 const App = () => {
     return (
         <BrowserRouter>

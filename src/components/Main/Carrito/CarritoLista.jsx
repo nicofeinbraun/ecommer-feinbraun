@@ -6,7 +6,7 @@ const CarritoLista = ({carritos}) => {
     return (
     <ul>
         {carritos.map(carrito=>{
-        return <CarritoItem key={carrito.codigo} carrito={carrito}/>
+        return <CarritoItem key={carrito.id} carrito={carrito}/>
     })}
     </ul>
     )

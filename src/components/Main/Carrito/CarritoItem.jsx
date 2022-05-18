@@ -9,7 +9,7 @@ const CarritoItem = ({carrito}) => {
 
     return (
         <div>
-            <h3>{carrito.codigo} {carrito.producto} --- {carrito.cantidad}  ${carrito.precio}  <button onClick={()=>borrar(carrito.codigo)}>X</button></h3>
+            <h3>{carrito.producto} --- {carrito.cantidad}  ${carrito.precio}  <button onClick={()=>borrar(carrito.id)}>X</button></h3>
             </div>
     )
 }

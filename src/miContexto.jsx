@@ -1,5 +1,5 @@
 import {createContext , useState} from 'react'
-import producto from "./productos.json"
+//import producto from "./productos.json"
 
 export const cartContext = createContext()
 

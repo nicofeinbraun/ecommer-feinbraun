@@ -3,14 +3,15 @@ import Contador from "./Contador"
 import {Link , NavLink} from 'react-router-dom'
 import {cartContext} from "../../../miContexto"
 
-const ItemDetail = ({productos}) => {
+const ItemDetail = ({productos , id}) => {
 
     const [cantidad,setCantidad] =useState(0)
     const {addItem} = useContext(cartContext)
+    
 
     const handleClick = (e) =>{
-        setCantidad (e)  
-        addItem(productos,e,(productos.precio*e))  
+        setCantidad (e)
+        addItem(productos,e,(productos.precio*e),id)  
     }
 
     return (

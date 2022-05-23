@@ -1,20 +1,21 @@
 import {createContext , useState} from 'react'
+import {useParams} from "react-router-dom"
 //import producto from "./productos.json"
 
 export const cartContext = createContext()
 
 const { Provider } = cartContext
 
-export const CustomProvider =({ defaultValue = [], children,producto }) =>{
+export const CustomProvider =({ defaultValue = [], children,producto,id }) =>{
 
     const [carrito,setCarrito] = useState(defaultValue)
 
     const [precio_total,setPrecio_total] = useState(0)
     const [cantidad_total,setCantidad_total] = useState(0)
-    const addItem =(producto, cantidad,precio) => {
-        if (isInCart(producto.id)==undefined){
+    const addItem =(producto, cantidad,precio,id) => {        
+        if (isInCart(id)==undefined){
             setCarrito([...carrito,{
-                id:producto.id,
+                id:id,
                 producto:producto.nombre,
                 cantidad:cantidad,
                 precio:precio
@@ -23,7 +24,7 @@ export const CustomProvider =({ defaultValue = [], children,producto }) =>{
         }else{
             const newCarrito = [...carrito]
             for (const element of newCarrito){
-                if(element.id === producto.id){
+                if(element.id === id){
                     element.cantidad = element.cantidad + cantidad
                     element.precio = element.precio + precio
                 }
@@ -39,7 +40,6 @@ export const CustomProvider =({ defaultValue = [], children,producto }) =>{
     }
 
     const removeItem = (codigo) => {
-        //const newCarrito = [...carrito].map(element => element.codigo !== codigo);
         const newCarrito = [...carrito]
         console.log(newCarrito)
         const borro = carrito.find(e => e.id === codigo)

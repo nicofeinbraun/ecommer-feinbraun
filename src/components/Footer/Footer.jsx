@@ -2,9 +2,6 @@ import NavBar from "../NavBar/NavBar"
 
 const Footer = () =>{
 
-    //const edad = 28
-    //const saludo =() => {}
-    //const links =["link1","link2","link3","contactame","faq","tienda"]
     const header = false
     return(
         <footer className="footer">
@@ -20,10 +17,3 @@ const Footer = () =>{
 }
 
 export default Footer
-
-/*              nombre="nicolas" 
-                apellido="feinbraun" 
-                edad={edad} 
-                onADD={saludo} 
-                link={links}
-*/

@@ -1,6 +1,4 @@
 import {createContext , useState} from 'react'
-import {useParams} from "react-router-dom"
-//import producto from "./productos.json"
 
 export const cartContext = createContext()
 
@@ -13,7 +11,7 @@ export const CustomProvider =({ defaultValue = [], children,producto,id }) =>{
     const [precio_total,setPrecio_total] = useState(0)
     const [cantidad_total,setCantidad_total] = useState(0)
     const addItem =(producto, cantidad,precio,id) => {        
-        if (isInCart(id)==undefined){
+        if (isInCart(id)===undefined){
             setCarrito([...carrito,{
                 id:id,
                 producto:producto.nombre,
@@ -46,7 +44,7 @@ export const CustomProvider =({ defaultValue = [], children,producto,id }) =>{
         console.log(borro.precio)
         setPrecio_total (precio_total - borro.precio)
         setCantidad_total (cantidad_total - borro.cantidad)
-        setCarrito(carrito.filter(carrito=>carrito.id!=codigo))
+        setCarrito(carrito.filter(carrito=>carrito.id!==codigo))
     }
 
     const clearCarrito = () => {

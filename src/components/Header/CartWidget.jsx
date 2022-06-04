@@ -1,5 +1,5 @@
-import React, { useContext, useState } from 'react'
-import {Link , NavLink} from 'react-router-dom'
+import React, { useContext } from 'react'
+import {Link } from 'react-router-dom'
 import {cartContext} from "../../miContexto"
 
 const CartWidget = () => {

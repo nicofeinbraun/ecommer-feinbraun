@@ -1,16 +1,14 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import Contador from "./Contador"
-import {Link , NavLink} from 'react-router-dom'
+import {Link } from 'react-router-dom'
 import {cartContext} from "../../../miContexto"
 
 const ItemDetail = ({productos , id}) => {
 
-    const [cantidad,setCantidad] =useState(0)
     const {addItem} = useContext(cartContext)
     
 
     const handleClick = (e) =>{
-        setCantidad (e)
         addItem(productos,e,(productos.precio*e),id)  
     }
 
@@ -21,7 +19,7 @@ const ItemDetail = ({productos , id}) => {
             <p>Precio : ${productos.precio}</p>
             <p>Detalle : {productos.descripcion}</p>
             <Contador init = {0} stock ={10} onClick={handleClick}/>
-            <Link to="/">
+            <Link to="/productos">
             <button>Volver</button>
             </Link>
         </article>

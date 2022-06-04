@@ -1,8 +1,7 @@
-//id lo toma igual. class se pone classNAme
 import NavBar from "../NavBar/NavBar"
 import React, { useContext } from 'react'
 import CartWidget from "./CartWidget"
-import {Link , NavLink} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {cartContext} from "../../miContexto"
 
 
@@ -14,7 +13,7 @@ const Header = () =>{
                 <Link to="/"><h1 className="header_title">E-Commerce</h1></Link>
                 <NavBar contacto="Contacto"
                 header={header}/>
-                {cantidad_total !=0 ? <CartWidget/>:<p></p>}
+                {cantidad_total !==0 ? <CartWidget/>:<p></p>}
             </header>
     )
 }

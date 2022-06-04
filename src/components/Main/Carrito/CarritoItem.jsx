@@ -1,4 +1,4 @@
-import {memo, useEffect, useContext} from "react"
+import {memo, useContext} from "react"
 import {cartContext} from "../../../miContexto"
 
 const CarritoItem = ({carrito}) => {

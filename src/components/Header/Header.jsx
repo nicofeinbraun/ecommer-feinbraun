@@ -11,8 +11,7 @@ const Header = () =>{
     return (
         <header className ="header">
                 <Link to="/"><h1 className="header_title">E-Commerce</h1></Link>
-                <NavBar contacto="Contacto"
-                header={header}/>
+                <NavBar header={header}/>
                 {cantidad_total !==0 ? <CartWidget/>:<p></p>}
             </header>
     )

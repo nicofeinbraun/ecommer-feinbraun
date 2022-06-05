@@ -14,13 +14,11 @@ const ItemListContainer = () => {
     useEffect(() => {
 
         const productosCollection = collection(db,`productos`)
-
         if(nombreCategoria === undefined){
             const consulta = getDocs(productosCollection)
-            consulta
+                consulta
                 .then((resultado)=>{
                     const productos = resultado.docs.map(doc=>{
-
                         const productoConId = doc.data()
                         productoConId.id = doc.id
                         return productoConId
@@ -43,6 +41,7 @@ const ItemListContainer = () => {
         }else{
             const queryDe = query(productosCollection,where("categorias","==",nombreCategoria))
             const consulta = getDocs(queryDe)
+        
             consulta
                 .then((resultado)=>{
                     const productos = resultado.docs.map(doc=>{

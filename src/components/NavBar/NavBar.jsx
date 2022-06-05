@@ -26,8 +26,6 @@ const NavBar = (props) => {
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
-            <Nav.Link href="#pricing">{props.instagram}</Nav.Link>
-            <Nav.Link href="#pricing">{props.facebook}</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

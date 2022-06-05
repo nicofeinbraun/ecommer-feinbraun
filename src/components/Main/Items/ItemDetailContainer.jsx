@@ -2,6 +2,7 @@ import {useState , useEffect} from "react"
 import ItemDetail from "./ItemDetail"
 import {useParams} from "react-router-dom"
 import {db} from "../../../firebase"
+import { toast } from "react-toastify";
 import { collection , getDoc , doc } from "firebase/firestore"
 
 
@@ -23,12 +24,12 @@ const ItemDetailContainer = () => {
                 setCargando(false)
             })
             .catch((error)=>{
-
+                toast.error(error)
             })
         },[id])
 if(cargando){
     return (
-        <p>Cargando ... </p>
+        toast.info("Cargando producto...")
         )
 }else{
     return (

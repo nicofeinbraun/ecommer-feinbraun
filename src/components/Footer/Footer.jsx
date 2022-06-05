@@ -7,11 +7,7 @@ const Footer = () =>{
         <footer className="footer">
                 <p>Copyright &copy; - 2022</p>
                 <p>Todos los derechos reservados</p>
-                <NavBar 
-                instagram = "instagram"
-                facebook = "facebook"
-                header ={header}
-                />
+                <NavBar header ={header}/>
         </footer>
     )
 }

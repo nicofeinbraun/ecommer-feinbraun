@@ -35,7 +35,7 @@ const ItemListContainer = () => {
                     
                 })
                 .catch((error)=>{
-
+                    toast.error(error)
                 })
                 .finally(()=>{
 
@@ -46,7 +46,6 @@ const ItemListContainer = () => {
             consulta
                 .then((resultado)=>{
                     const productos = resultado.docs.map(doc=>{
-
                         const productoConId = doc.data()
                         productoConId.id = doc.id
                         return productoConId
@@ -56,7 +55,7 @@ const ItemListContainer = () => {
                     setCargando(false)
                 })
                 .catch((error)=>{
-
+                    toast.error(error)
                 })
                 .finally(()=>{
 

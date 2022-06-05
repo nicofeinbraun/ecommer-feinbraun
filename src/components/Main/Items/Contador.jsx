@@ -1,4 +1,4 @@
-import {useState , useEffect, onAdd} from "react"
+import {useState } from "react"
 import {Link} from 'react-router-dom'
 
 const Contador = ({init,stock, onClick}) => {

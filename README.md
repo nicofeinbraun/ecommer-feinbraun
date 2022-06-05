@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+## Descripcion proyectos
+Esto es un ecommerce realizado en React, en el los clientes pueden ver el listado general de los articulos o filtrarlos por categorias para luego seleccionar y ver la descripcion del articulo y realizar la compra de las cantidades que deseen.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Herramientas utilizadas
 
-## Available Scripts
+* react-bootstrap version 2.2.3
+    Use react-bootstrap para darle estilos tanto al header como al footer y para armar un carrousel de imagenes en el home de la pagina
 
-In the project directory, you can run:
+* bootstrap version 5.1.3
 
-### `npm start`
+* firebase version 9.8.1
+    Use firebase para utilizar firestore como base de datos para poder guardar la informacion de los poductos y de las compras realizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* react version 18.0.0
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* react-dom version 18.0.0
 
-### `npm test`
+* react-router-dom version 6.3.0.
+    Use react-router-dom porque con esta libreria puedo hacer las routas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* react-scripts version 5.0.0
 
-### `npm run build`
+* react-toastify version 9.0.1
+    Use react-toastify para mostrar alertas de que cargo bien el listado de productos y que se finalizo la compra
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* sass version 1.52.2
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* web-vitals version 2.1.4
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* @testing-library/jest-dom": "^5.16.4"
 
-### `npm run eject`
+* @testing-library/react": "^12.1.4"
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* @testing-library/user-event": "^13.5.0"
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Pasos de instalacion 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clonar repositorio  git clone https://github.com/nicofeinbraun/ecommer-feinbraun
+2. Para instalar y correr el programa escriba y ejecute 
+```bash
+npm install
+```
+3. Instale las librerias
+    * react-bootstrap
+    * firebase
+    * react-router-dom
+    * react-toastify
+4. Hacer npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##

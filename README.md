@@ -46,5 +46,3 @@ npm install
     * react-router-dom
     * react-toastify
 4. Hacer npm start
-
-##
